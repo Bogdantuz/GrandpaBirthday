@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+}
+
+a {
+    position: relative;
+    margin: 0;
+    font-size: 42.5px;
+    transition: 
+        filter cubic-bezier(1, 0.0001, 0.0001, 0.0001) 0.3s,
+        top cubic-bezier(1, 0.05, 0.001, 0.001) 0.6s,
+        left cubic-bezier(0.9, 0.1, 0.3, 1) 0.6s,
+        text-shadow 0.6s,
+        opacity 0.35s;
+}
+
+
+.hidden * {
+    opacity: 0;
+    filter: blur(8px);
+    top: -8.5vh;
+    text-shadow: none;
+}
+
+.show * {
+    opacity: 1;
+    filter: blur(0);
+    top: 0;
+    text-shadow: 0 0 70px rgb(255, 255, 255);
+}
+
+
+div:nth-of-type(1) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/first.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(2) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/second.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(3) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/third.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(4) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/fourth.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(5) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/fifth.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(6) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/sixth.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(7) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/seventh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(8) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/eighth.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(9) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/ninth.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div:nth-of-type(10) {
+    background: 
+        linear-gradient(rgba(19, 19, 22, 0.925), rgba(19, 19, 22, 0.925)),
+        url('images/tenth.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
