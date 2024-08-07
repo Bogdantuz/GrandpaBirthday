@@ -36,7 +36,7 @@ a {
 .hidden * {
     opacity: 0;
     filter: blur(8px);
-    top: -8.5vh;
+    top: -55px;
     text-shadow: none;
 }
 

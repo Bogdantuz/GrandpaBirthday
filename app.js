@@ -6,7 +6,7 @@ function observeMutation(object, positions) {
                 if (!mutation.target.classList.contains("show")) {
                     index = 0
                     mutation.target.querySelectorAll('*').forEach((el) => {
-                        el.style.left = `${positions[index]}vw`
+                        el.style.left = `${positions[index]}px`
                         index++
                     })
                 } else {
@@ -29,7 +29,7 @@ const textElements = document.querySelectorAll('a')
 textElements.forEach((el) => {
     const parent = el.parentElement
     let delay = 0
-    let positions = [-10]
+    let positions = [-100]
 
     el.textContent.split('').forEach((char) => {
         const newEl = document.createElement('a')
@@ -38,7 +38,7 @@ textElements.forEach((el) => {
         newEl.style.transitionDelay = `${delay}s`
         delay += 0.22
 
-        positions.push(positions[positions.length - 1] - 2)
+        positions.push(positions[positions.length - 1] - 22)
 
         parent.appendChild(newEl)
     })
