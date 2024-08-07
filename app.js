@@ -28,6 +28,7 @@ function observeMutation(object, positions) {
 const textElements = document.querySelectorAll('a')
 textElements.forEach((el) => {
     const parent = el.parentElement
+    const paragraph = document.createElement('p')
     let delay = 0
     let positions = [-100]
 
@@ -40,9 +41,10 @@ textElements.forEach((el) => {
 
         positions.push(positions[positions.length - 1] - 22)
 
-        parent.appendChild(newEl)
+        paragraph.appendChild(newEl)
     })
 
+    parent.appendChild(paragraph)
     el.remove()
 
     observeMutation(parent, positions)
